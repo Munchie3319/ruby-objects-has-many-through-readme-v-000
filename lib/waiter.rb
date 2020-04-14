@@ -1,4 +1,5 @@
 class Waiter
+
   attr_accessor :name, :yrs_experience
 
   @@all = [ ]
@@ -10,11 +11,6 @@ class Waiter
   end
 
   def self.all
-    @@all
+    @@all 
   end
-
-
-
-
-
 end
