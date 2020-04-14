@@ -18,7 +18,7 @@ class Waiter
     Meal.new(self, customer, total, tip)
   end
 
-  def meals 
+  def meals
     Meal.all.select do |meal|
       meal.waiter == self
     end
@@ -29,6 +29,6 @@ class Waiter
       a.tip <=> b.tip
     end
 end
-  
+
 
 end
