@@ -1,7 +1,7 @@
 class Customer
 
 
-  end 		   @@all = []
+  @@all = []
 
     attr_accessor :name, :age
 
