@@ -17,15 +17,8 @@ class Customer
     Meal.new(waiter, self, total, tip)
   end
 
-  terrance = Customer.new("Terrance", 27)
-  jason = Waiter.new("Jason", 4)
-  andrew = Waiter.new("Andrew", 7)
-  yomi = Waiter.new("Yomi", 10)
-
-  terrance.new_meal(jason, 50, 6)
-  terrance.new_meal(andrew, 60, 8)
-  terrance.new_meal(yomi, 30, 4)
-
-  terrance.waiters
-  terrance.waiters.length
+  def meals
+    Meal.all.select do |meal|
+      meal.customer == self.end
+    end
 end
